@@ -41,8 +41,11 @@ Option A — Utiliser `render.yaml` (recommandé)
 2) Sur Render, « New + » → « Blueprint » et pointez sur votre repo.
 3) Render détecte `render.yaml` et crée le service web.
 4) Déployez. L’URL ressemblera à `https://<votre-app>.onrender.com`.
-5) Partagez l’URL WebSocket: `wss://<votre-app>.onrender.com/ws`.
-6) Côté client:
+5) Client Web prêt à l’emploi: ouvrez `https://<votre-app>.onrender.com` dans le navigateur (les images sont servies depuis `/images`).
+6) Pour jouer sans installer quoi que ce soit:
+   - Un joueur clique « Héberger » et partage le code affiché.
+   - L’ami entre le code et clique « Rejoindre » — jouez directement dans le navigateur.
+7) Pour rester compatible avec l’ancien client desktop, vous pouvez toujours utiliser:
    - Hôte: `python main.py --online --server wss://<votre-app>.onrender.com/ws`
    - Ami:  `python main.py --online --server wss://<votre-app>.onrender.com/ws --join ABC123`
 

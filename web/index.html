@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PyChess Web</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PyChess Web</h1>
+
+      <div class="controls">
+        <button id="hostBtn">Héberger</button>
+        <input id="codeInput" placeholder="Code (ex: ABC123)" />
+        <button id="joinBtn">Rejoindre</button>
+        <span id="status"></span>
+      </div>
+
+      <div class="info">
+        <div>Votre couleur: <span id="myColor">?</span></div>
+        <div>Code de la partie: <span id="roomCode">—</span></div>
+        <div>Au tour de: <span id="turn">—</span></div>
+      </div>
+
+      <div id="board" class="board"></div>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
