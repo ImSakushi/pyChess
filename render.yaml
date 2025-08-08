@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pychess-server
+    env: python
+    rootDir: .
+    plan: free
+    buildCommand: pip install -r server/requirements.txt
+    startCommand: uvicorn server.server:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
